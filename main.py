@@ -38,7 +38,6 @@ with TsvReader('constellations.tsv') as reader:
         if line[0] not in organizations:
             organizations.append(line[0]) # inefficient but we're only doing it 100 times.
         c.organization = line[0]
-        # TODO Modify organization processing to handle working group detection and creation!
 
         # 1. Launched / Planned. Either one might be '?'
         # Split on '/' and trim whitespace.
@@ -138,5 +137,12 @@ with TsvReader('constellations.tsv') as reader:
         c.index = index
         index += 1
 
-        print("{}\t\t{}\t\t{}".format(c, c.formFactorsSql(), c.fieldsSql()))
+        # print("{}\t\t{}\t\t{}".format(c, c.formFactorsSql(), c.fieldsSql()))
+        constellations.append(c)
+
+# Print our various lists.
+print("Organizations:", organizations)
+print("Form Factors:", formFactors)
+print("Fields:", fields)
+print("Constellations:", constellations)
 

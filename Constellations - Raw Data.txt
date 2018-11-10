@@ -1,0 +1,92 @@
+Organization	Launched / Planned network	First launch	Form factor	Field	Funding	Technical and comments	Image
+							
+ExactEarth	57 / 67	2008	"Nanosat, Hosted"	AIS	Yes	Own satellites called AprizeSat or ExactView. Now also hosted payloads on 58 Iridium-NEXT satellites.	
+Planet	324 / 150	2013	3U	Earth observation	$183 million	29 MP sensor taking images with 3.7 m ground resolution and swath of 24.6 km  x 16.4 km from 475 km altitude.	
+Spire	85 / 150	2013	3U	"Weather, AIS, ADS-B"	$149.5 million	"Measure change in GPS signal after passing atmosphere to calculate precise profiles for temperature, pressure, humidity."	
+Planet (Terra Bella / Skybox)	13 / 24	2013	Smallsat	Earth observation	"Yes, ?"	Color and near-infrared imagery (90 cm resolution) in 120 kg package. First-ever commercial high-resolution video from a satellite.	
+Astro Digital (Aquila)	43245	2014	"6U, 16U"	Earth observation	$16.7+ million	"6U has 22 m resolution in RGB and NIR. 16U has 2.5 m resolution in RGB, red edge, and NIR using one 70 MP sensor."	
+BlackSky / Spaceflight	21916	2016	Microsat	Earth observation	$203.5 million	Subsidiary of Spaceflight Industries. Color imagery at a resolution of 1 meter.	
+GHGSat	43120	2016	Microsat	Emissions monitoring	$20 million	Measure CO2 and methane in a FoV of ~12 km  x 12 km and resolution of <50 m. Sensors include 2D Wide-Angle Fabry-Perot imaging spectrometer with 15 kg satellite.	
+Satellogic	43184	2016	Microsat	"Earth observation, Hyperspectral"	$29 million	NuSat 37 kg satellites are capable of 1 m ground resolution imaging and video.	
+Space View	43236	2016	Satellite	Earth observation	?	First commercial 560 kg Chinese high-resolution Earth imaging satellites called SuperView (GaoJing) with resolution of 0.5 m per pixel.	
+Xingyun	1 / 156	2017	Smallsat	"Internet, IoT / M2M"	?	Plans to be completed by 2025.	
+Sky and Space Global	3 / 200	2017	8U	IoT / M2M	$11.5 million	Plans to use inter-satellite links. Satellites outsourced from GomSpace.	
+GeoOptics	5 / ?	2017	6U	Weather	$5.15 million	Satellites outsourced from Tyvak.	
+Zhuhai Orbita Control	43291	2017	Smallsat	"Earth observation, Hyperspectral"	Yes	Constellation of different video and hyperspectral satellites.	
+Canon	1 / 100	2017	Microsat	Earth observation	?	8K low-light real-time video and streaming using laser terminal.	
+Aireon	65 / 75	2017	Hosted	ADS-B	$50 million	Hosted payload on Iridum-NEXT satellites for global air traffic surveillance.	
+Helios Wire	43130	2017	"6U, 16U"	IoT / M2M	$1 million	Uses 30 MHz of S-band spectrum to receive tiny data packages from billions of sensors. First payloads hosted on Astro Digital Corvus/Landmapper CubeSats.	
+Swarm Technologies	4 / ?	2018	"0.25U, 1U"	IoT / M2M	?	World's smallest two-way communication satellites.	
+Kepler Communications	1 / 140	2018	"3U, 6U, ?"	"IoT / M2M, Internet"	$21 million	Monthly fee based on the data amount. Hope to achieve rates of 1-40 Mbps. Clyde Space will provide at least the first 2 sats.	
+ICEYE	43118	2018	Microsat	SAR	$53+ million	21 launch agreement with Vector Space Systems. 10 platform agreement with York Space Systems.	
+SpaceX	922271	2018	Smallsat	Internet	$1.6 billion	400 kg satellites according to FCC filing. First technology demonstration missions planned to fly in 2017.	
+Orbital Sidekick	1 / ?	2018	?	"Earth observation, Hyperspectral"	$4.7 million	First sensor on ISS. Constellation coming in 2020.	
+Analytical Space	1 / ?	2018	6U	"IoT / M2M, Orbital data relay, Optical comms"	$4 million	In-orbit relays receiving radio and downlink to ground with laser communication enabling more data downlink from satellites.	
+PlanetiQ	0 / 18	2018	6U	Weather	$5+ million	Based on GPS radio occultation. Will have microwave spectrometer & radiometer. Blue Canyon Tech builds satellites.	
+Hiber (Magnitude Space)	0 / 48	2018	6U	IoT / M2M	$6.2 million	"Send small packets of data (140 characters, accompanied by time?stamp, identifier and location)."	
+Fleet Space	0 / 100	2018	"3U, 12U"	IoT / M2M	$3.7 million	Selected Saber Astronautics as the operations provider. Launches planned to be started in 2017.	
+Astrocast (ELSE)	0 / 64	2018	3U	IoT / M2M	$7.1 million	Demonstration mission in 2018. Targeting L-band. Inter-satellite links. NanoSpace propulsion.	
+Blink Astro	0 / ?	2018	3U	IoT / M2M	?	Blink Astro and NanoAvionics have signed an agreement to fly a tech demo payload to LEO in fall 2018.	
+AISTech	0 / 100	2018	"2U, 6U"	"IoT / M2M, ADS-B, AIS, IR imaging"	$0.31 million	"2-way comms, thermal imaging to detect forest fires, aviation tracking (ADS-B). Satellites will be built by GomSpace."	
+HawkEye360	0 / 30	2018	Microsat	RF spectrum monitoring	$26 million	"Radio frequency (RF) mapping with 15 kg sats to help monitor transportation across air, land, sea and assist in emergencies. Built by GomSpace."	
+Axelspace	0 / 50	2018	Microsat	Earth observation	$16 million	Weighs < 95 kg and captures images with a 2.5-meter resolution over a 57-kilometer area.	
+Capella Space	0 / 40	2018	Microsat	SAR	$34 million	"Resolutions from 1 m (1600 km2) to 30 m (27,000 km2). Every 3-6 hours globally and 45 min in equatorial regions, improving to every hour in 3-5 years."	
+OneWeb	0 / 648	2018	Smallsat	Internet	$1.7 billion	Joint venture with Airbus to build the constellation of 125 kg satellites.	
+Karten Space	0 / 14	2018	6U	"Earth observation, AIS"	?	Optical resolution is 3-5 m.	
+UnSeenLabs	0 / ?	2018	6U	RF spectrum monitoring	?	Satellites outsourced from GomSpace.	
+NSLComm (SkyFi)	0 / 60	2018	6U	"Internet, IoT / M2M"	$9.25+ million	Up to 1 Gbps anywhere in the world with a novel antenna.	
+Kaskilo / eightyLEO	0 / 300	2018	Smallsat	IoT / M2M	?	10 Gbps intersatellite laser communication links. Ka-band for ground communications.	
+Orbital Micro Systems	0 / 40	2018	3U?	Weather	$0.65 million	"Utilizes microwave technology to capture temperature and moisture measurements, refreshed and delivered every 15 minutes."	
+Lacuna Space	0 / 32	2018	6U	IoT / M2M	Yes		
+Hera Systems	0 / 50	2019	12U	Earth observation	$4.2+ million	Capable of 1-meter resolution with 22-kilogram form factor.	
+Hongyan	0 / 320	2018	Satellite	Internet	?	"Completion in 2023 in multiple phases to provide global broadband access, voice communications and other services."	
+SRT Marine	0 / 6	2019	6U	AIS	?	Scanning technology will enable the detection of vessels without an identification transceiver. Clyde Space will build the spacecraft.	
+Reaktor Space	0 / 36	2018	6U	"Earth observation, Hyperspectral"	?	Hyperspectral constellation for smart agriculture with 100's of spectral bands and 20 m resolution.	
+SatRevolution	0 / 66	2018	2U	Earth observation	$0.8 million	Imaging the Earth in 4m resolution through the use of an innovative lens.	
+Commsat (Ladybug)	0 / ?	2018	Microsat	IoT / M2M	$16 million		
+Aerial & Maritime	0 / ?	2019	3U?	"AIS, ADS-B"	$12.2 million	Monitoring aircraft (ADS-B) and vessels (AIS) from 37°N to 37°S. GomSpace is shareholder and will develop satellites. Cooperation with Flightradar24.	
+Rupercorp	0 / ?	2019	6U	Earth observation	?	2U CubeSat to be launched in 2018 will be a precursor for the commercial constellation based on NanoAvionics M6P with "green" chemical propulsion system.	
+Harris	0 / 12	2019	6U	Weather	"Yes, ?"	Immediate access to 3D wind data sets from Harris-owned HyperCubes. Utah State University provides the spacecraft.	
+Earth-i	0 / 15	2019	Microsat	Earth observation	?	First constellation in the world able to provide full-colour video.	
+Synspective	0 / 30	2019	Smallsat	Earth observation	$13.6 million	Developing 3kW power amplifiers to realize 1m ground resolution.	
+Space Systems Engineering	0 / ?	2019	?	Earth observation	?	Advanced Earth Observation VNIR optical instrument payload.	
+Astrome	0 / 150	2019	Microsat	Internet	?	Indian space technology company to provide high speed broadband internet from space.	
+Audacy Space	0 / 3	2019	?	Orbital data relay	$11.1 million	3 relay satellites in Medium Earth Orbit (MEO) for continous communication with satellites.	
+Cloud Constellation	0 / ?	2019	?	Data storage	Yes	Space-based cloud storage. An array of equatorial low earth orbiting data center satellites. Much more secure and in some cases better-performing. 10-gigabit laser communications links between satellites.	
+Transcelestial	0 / ?	2019	CubeSat?	"Orbital data relay, Optical comms"	$1.8 million	Space data network for terrestrial and satellite applications. Using lasers to transfer data at up to 1000x faster than currently available.	
+Dauria / SatByul	0 / 8	2019	6U	Earth observation	?	Perseus-O multispectral constellation. Many similarities to Astro Digital.	
+Kleos Space	0 / 20	2019	CubeSat	"AIS, Geolocation"	?	"Radio data collection spacecraft with our patented In-Space Manufacturing technology, a miniature machine that manufactures enormous composite booms used to deploy antenna."	
+HyperSat	0 / 6	2020	Smallsat	"Earth observation, Hyperspectral"	$85 million	Imaging over 200 spectral bands (wavelengths of light) with a sub-10 meter ground sample distance.	
+LaserFleet	0 / ?	2020	Microsat	"Internet, Optical comms"	$2? million	Provide reliable 1 Gbps communication rates to aircraft at altitude. Higher effective data rate at a lower cost than the best-in-class Ku/Ka/V.	
+Kineis	0 / 20	2020	16U	IoT / M2M	Yes	Two-way communications and propulsion.	
+XpressSAR	0 / 4	2020	?	SAR	?	Small-area spotlight images with resolutions under 1 meter. Four satellites in two orbit planes with a 35° inclination.	
+Orora Tech	0 / 100	2021	3U	"Weather, IR imaging"	?	New patent pending CubeSat framework with high-end imaging sensors to accurately measure both surface temperatures and cloud coverage.	
+Methera	0 / 16	2021	Smallsat	Internet	Seed	Working on low-cost terminal design thanks to Innovate UK funding.	
+Trident Space (Magna Parva)	0 / 48	2021	Smallsat	SAR	$7 million	Breakthrough compact radar technology and onboard machine learning for automated feature extraction and predictive analytics. Innovative light weight reflector. 300 kg satellites.	
+VEOWARE	0 / ?	2021	Satellite	Earth observation	?	"Lease satellite time to its customers, providing them with essential imagery capacity."	
+Scepter	0 / ?	?	Microsat	Emissions monitoring	?	Air pollution monitoring precise enough to reveal conditions for individual city blocks.	
+Astranis	0 / ?	?	Smallsat	Internet	$18 million	Ssmall GEO satellite weighing 300 kg to provide up to 10 Gb/s of bandwidth.	
+Umbra Lab	0 / 12	?	Microsat	SAR	Yes	"Software defined radar. Groundbreaking power aperture area and launch volume. Range resolution ?0.25m, azimuth resolution ?0.10m."	
+EarthNow	0 / 500	?	Microsat	Earth observation	Yes	Continuous real-time video of the Earth enhanced by machine intelligence.	
+OQ Technology	0 / ?	?	CubeSat	IoT / M2M		World's first universal plug & play IoT device that can provide connectivity leveraging Low-Earth-Orbit satellite infrastructure.	
+Tekever	0 / 12	?	16U	"Earth observation, SAR, AIS, ADS-B, IoT / M2M"	?	"Constellation will carry the same observation and telecom payloads as Infante, but with different payloads on different satellites."	
+ArQit	0 / ?	?	CubeSat?	"QKD, Optical comms"	?	Quantum Key Distribution shared in laser transmissions from a satellite. Qinetiq is contractor for spacecraft.	
+NorStar NorthStar	0 / 40	?	Microsat	"Earth observation, Hyperspectral"	?	First commercial system to combine Hyperspectral and Infrared sensors to observe Earth	
+Laser Light	0 / 12	?	Satellite	Optical comms	?	Optical laser comm constellation in MEO as an Internet infrastructure service.	
+Koolock	0 / ?	?	CubeSat	"Earth observation, IR imaging"	?	The most advanced feature set for weather and environmental monitoring.	
+Alba Orbital	0 / ?	?	PocketQube	Earth observation	?	First PocketQube constellation.	
+Galaktika	0 / ?	?	Microsat	IoT / M2M	?	Pulsar IoT constellation for two-way exchange of data packets at a speed up to 500 bit/sec.	
+Myriota	0 / ?	?	CubeSat?	IoT / M2M	$15+ million		
+Ubiquitilink	? / ?	?	CubeSat	IoT / M2M	Yes	Leverage nanosatellites in a unique manner to provide connectivity anywhere on the planet.	
+Hypercubes	0 / ?	?	CubeSat?	"Earth observation, Hyperspectral"	?	"Track not only the chemical output of factories and farms, but also the movement of machines and equipment."	
+Efir	0 / 288	?	Smallsat	Internet	?	Russian constellation in 870 km orbit operational in 2025.	
+B612 Foundation	0 / ?	?	Microsat	Asteroid tracking	?	"Track smaller, fast-moving asteroids in the range of 140 m to 1 km wide. Built by York Space Systems."	
+Planetary Resources	43141	Cancelled	12U	Earth observation	$50+ million	Visible-NIR 40 channel hyperspectral imager with 10 m resolution. Midwave infrared imager (MWIR) in 3-5 ?m with 15 m resolution. Has been deprioritized for asteroid missions.	
+Outernet	0 / 200	Cancelled	"1U, 3U"	Internet	Yes	"Broadcast free data from space. Revenue from ads, premium content and hardware sales. Cancelled in 2017 due to lack of launch funding."	
+Ursa Space Systems	0 / ?	Cancelled	Microsat	SAR	?	"In parallel developing own constellation to provide priority access, superior revisit frequency, improved resolution and direct downlink."	
+Earthcube	0 / 10	Cancelled	CubeSat	"Earth observation, IR imaging"	$4.5+ million	Might use Exotrail thrusters.	
+Terran Orbital (Tyvak)	0 / ?	Cancelled	CubeSat	IoT / M2M	Yes	Building a constellation of best-in-class nanosatellites that will form an unprecedented data infrastructure in space.	
+ISIS / Innovative Data Services	0 / 16	Cancelled	3U	AIS	?	"AIS payload tested on Triton-1 and network planned for a while, but no recent news. ADS-B, M2M and asset tracking also considered."	
+Promethean Labs	0 / ?	Cancelled	CubeSat	Emissions monitoring	?	"Special imager for measuring greenhouse gas (GHG) emissions, monitoring of water and air quality, forestry and land."	
+BitSat (Dunvegan Space Systems)	0 / 24	Cancelled	3U	"IoT / M2M, Data storage"	?	"Providing communications, data processing, storage and broadcasting capabilities in space. Cancelled when fundraising fell through."	
+4skies (NovaNano)	0 / ?	Cancelled	Microsat	IoT / M2M	?	"Was one of the first in the field, but was not able to raise funding."	

@@ -1,0 +1,16 @@
+INSERT INTO FormFactor(name) VALUES
+	('Nanosat'),
+	('Hosted'),
+	('3U'),
+	('Smallsat'),
+	('6U'),
+	('16U'),
+	('Microsat'),
+	('Satellite'),
+	('8U'),
+	('0.25U'),
+	('1U'),
+	('12U'),
+	('2U'),
+	('CubeSat'),
+	('PocketQube');

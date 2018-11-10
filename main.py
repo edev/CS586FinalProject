@@ -36,6 +36,9 @@ with TsvReader('constellations.tsv') as reader:
         line = [e.replace('"', '') for e in line]
         line = [e.replace('\t', ' ') for e in line]
 
+        # Escape single quotes.
+        line = [e.replace("'", "''") for e in line]
+
         # The constellation we're setting up.
         c = Constellation()
 
@@ -167,6 +170,9 @@ with TsvReader('launchers.tsv') as reader:
         line = [e.strip() for e in line]
         line = [e.replace('"', '') for e in line]
         line = [e.replace('\t', ' ') for e in line]
+
+        # Escape single quotes.
+        line = [e.replace("'", "''") for e in line]
 
         # The constellation we're setting up.
         l = Launcher()
@@ -322,6 +328,9 @@ with TsvReader('spaceships.tsv') as reader:
         line = [e.replace('"', '') for e in line]
         line = [e.replace('\t', ' ') for e in line]
 
+        # Escape single quotes.
+        line = [e.replace("'", "''") for e in line]
+
         # The constellation we're setting up.
         s = Spaceship()
 
@@ -372,7 +381,7 @@ with open("insertLaunchers.sql", "w") as f:
 # Spaceships
 strings = [str(s) for s in spaceships]
 with open("insertSpaceships.sql", "w") as f:
-    f.write(Launcher.sqlInsertHeader())
+    f.write(Spaceship.sqlInsertHeader())
     f.write("\t")
     f.write(",\n\t".join(strings))
     f.write(";")
@@ -400,4 +409,18 @@ with open("insertFormFactors.sql", "w") as f:
     f.write(";")
 
 # And finally, we have two junction tables to output from Constellations.
-# TODO
+# ConstField
+strings = ",\n\t".join([c.fieldsSql() for c in constellations])
+with open("insertConstFields.sql", "w") as f:
+    f.write(Constellation.constFieldSqlInsertHeader())
+    f.write("\t")
+    f.write(strings)
+    f.write(";")
+
+# ConstFF
+strings = ",\n\t".join([c.formFactorsSql() for c in constellations])
+# Now, since not all Constellations have at least one known Form Factor, our join just inserted a few double-commas
+# that we have to remedy. Given that this is throw-away code, this little hack will work just fine.
+strings = strings.replace(",\n\t,", ",").replace(",\n\t,", ",")
+with open("insertConstFF.sql", "w") as f:
+    f.write("{}\t{};".format(Constellation.constFFSqlInsertHeader(), strings))

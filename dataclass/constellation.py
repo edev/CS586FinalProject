@@ -51,7 +51,7 @@ class Constellation:
         this and other fieldSql() strings from other Constellation objects."""
 
         if len(self.fields) == 0:
-            return None # We might need to change this later.
+            return ""
         formatString = "({}, {})".format(str(sqlint(self.index)), "{}")
         return ", ".join([formatString.format(sqlstr(field)) for field in self.fields])
 
@@ -60,12 +60,24 @@ class Constellation:
         Constellations and FormFactors. Output is identical to fieldSql() except with FormFactor names rather than
         Field names."""
         if len(self.formFactors) == 0:
-            return None # We might need to change this later.
+            return ""
         formatString = "({}, {})".format(str(sqlint(self.index)), "{}")
         return ", ".join([formatString.format(sqlstr(formFactor)) for formFactor in self.formFactors])
 
     @classmethod
+    def constFieldSqlInsertHeader(cls):
+        """Returns the first line of an INSERT statement for ConstField, i.e. INSERT ... VALUES\n"""
+
+        return "INSERT INTO ConstField(constIndex, fieldName) VALUES\n"
+
+    @classmethod
+    def constFFSqlInsertHeader(cls):
+        """Returns the first line of an INSERT statement for ConstFF, i.e. INSERT ... VALUES\n"""
+
+        return "INSERT INTO ConstFF(constIndex, ffName) VALUES\n"
+
+    @classmethod
     def sqlInsertHeader(cls):
-        """Returns the first line of an INSERT statement for Constellation, i.e. INSERT ... VALUE\n"""
+        """Returns the first line of an INSERT statement for Constellation, i.e. INSERT ... VALUEs\n"""
 
         return "INSERT INTO Constellation(index, orgName, comment, planned, launched, firstLaunch, isFunded, fundingAmt) VALUES\n"

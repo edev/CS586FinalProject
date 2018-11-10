@@ -3,6 +3,7 @@ from decimal import Decimal, getcontext
 from reader.tsvreader import TsvReader
 from dataclass.constellation import Constellation
 from dataclass.launcher import Launcher
+from dataclass.spaceship import Spaceship
 
 
 # Initial setup.
@@ -13,6 +14,8 @@ organizations = list()
 formFactors = list()
 fields = list()
 constellations = list()
+launchers = list()
+spaceships = list()
 
 # Process Constellations.
 index = 1
@@ -38,7 +41,7 @@ with TsvReader('constellations.tsv') as reader:
 
         # 0: organization. See if it exists already. If not, add it to the list. Either way, set it.
         if line[0] not in organizations:
-            organizations.append(line[0]) # inefficient but we're only doing it 100 times.
+            organizations.append(line[0]) # inefficient but we're only doing it 200 times.
         c.organization = line[0]
 
         # 1. Launched / Planned. Either one might be '?'
@@ -170,7 +173,7 @@ with TsvReader('launchers.tsv') as reader:
 
         # 0: organization. See if it exists already. If not, add it to the list. Either way, set it.
         if line[0] not in organizations:
-            organizations.append(line[0]) # inefficient but we're only doing it 100 times.
+            organizations.append(line[0]) # inefficient but we're only doing it 200 times.
         l.organization = line[0]
 
         # 1. name
@@ -296,12 +299,56 @@ with TsvReader('launchers.tsv') as reader:
         # Print for testing, if desired.
         # print(l)
 
+        launchers.append(l)
+
 # For safety.
 l = None
+
+# Process Spaceships.
+with TsvReader('spaceships.tsv') as reader:
+    for line in reader:
+        # Each line is a list of tokens to be processed.
+
+        # Test code: prints everything with its column number.
+        # for i in list(range(len(line))):
+        #     print("{}:  {}".format(i, line[i]))
+
+        # Make sure we have the right number of tokens; otherwise, skip.
+        if len(line) != 4:
+            continue
+
+        # Perform some initial clean-up.
+        line = [e.strip() for e in line]
+        line = [e.replace('"', '') for e in line]
+        line = [e.replace('\t', ' ') for e in line]
+
+        # The constellation we're setting up.
+        s = Spaceship()
+
+        # 0: organization. See if it exists already. If not, add it to the list. Either way, set it.
+        if line[0] not in organizations:
+            organizations.append(line[0]) # inefficient but we're only doing it 200 times.
+        s.organization = line[0]
+
+        # 1. name
+        # Direct copy.
+        s.name = line[1]
+
+        # 2: launchYear
+        # The year the ship first launched. Direct copy.
+        s.launchYear = line[2]
+
+        # 3: description
+        # A text description of the spaceship. Direct copy.
+        s.description = line[3]
+
+        spaceships.append(s)
 
 # Print our various lists, for testing purposes.
 # print("Organizations:", organizations)
 # print("Form Factors:", formFactors)
 # print("Fields:", fields)
-# print("Constellations:", constellations)
+print("Constellations:", constellations)
+print("Launchers:", launchers)
+print("Spaceships:", spaceships)
 

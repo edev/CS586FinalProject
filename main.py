@@ -2,6 +2,8 @@ import re
 from decimal import Decimal, getcontext
 from reader.tsvreader import TsvReader
 from dataclass.constellation import Constellation
+from dataclass.launcher import Launcher
+
 
 # Initial setup.
 getcontext().prec = 10 # we'll probably need no more than 2, but we DEFINITELY won't need more than 10.
@@ -142,6 +144,9 @@ with TsvReader('constellations.tsv') as reader:
 
         constellations.append(c)
 
+# For safety.
+c = None
+
 # Process Launchers.
 with TsvReader('launchers.tsv') as reader:
     for line in reader:
@@ -161,12 +166,138 @@ with TsvReader('launchers.tsv') as reader:
         line = [e.replace('\t', ' ') for e in line]
 
         # The constellation we're setting up.
-        c = Constellation()
+        l = Launcher()
 
         # 0: organization. See if it exists already. If not, add it to the list. Either way, set it.
         if line[0] not in organizations:
             organizations.append(line[0]) # inefficient but we're only doing it 100 times.
-        c.organization = line[0]
+        l.organization = line[0]
+
+        # 1. name
+        # Either "-" or a valid value. If "-" then set None.
+        if line[1] == "-":
+            l.name = None
+        else:
+            l.name = line[1]
+
+        # 2: founded
+        # The year the launcher was founded, i.e. the year work began.
+        # Either a 4-digit integer (e.g. 2010) or "-".
+        if line[2] == "-":
+            l.founded = None
+        else:
+            l.founded = line[2]
+
+        # 3: status
+        # A text description of a status value. No missing values, so direct copy.
+        l.status = line[3]
+
+        # 4: first launch
+        # One of three value types:
+        #   1. A 4-digit year -> direct copy
+        #   2. "-" -> None
+        #   3. "Never?" -> None (but we'll match any occurrence of "Never" for safety)
+        if line[4] == "-" or "Never" in line[4]:
+            l.firstLaunch = None
+        else:
+            l.firstLaunch = line[4]
+
+        # 5: launches
+        # The number of launches that a launcher has had. An integer. Straight copy.
+        l.launches = line[5]
+
+        # 6: cost
+        # We'll adapt code from Constellation's funding field, since it's similar.
+
+        # This field is one of a few types of values:
+        #   1. "-" -> None
+        #   3. "$###M" where ### is a decimal number -> ### times 1,000,000
+        # We'll strip out "?" to clean up parsing. It only occurs a couple of times, and we have no way of
+        # intelligently interpreting this information anyway.
+
+        line[6] = line[6].replace("?", "")
+        if line[6] == "-":
+            l.cost = None
+        elif "M" in line[6]:
+
+            # 1. Find the number with a regular expression search. Might have a decimal point, even though it's a
+            #    very large number.
+            # 2. Convert to Decimal to preserve accuracy and allow us to do math.
+            # 3. Multiply as needed.
+            # 4. Convert to int to get rid of the decimal point.
+            # 5. Convert to string for SQL.
+            l.cost = \
+                str(
+                    int(
+                        Decimal(
+                            re.search(r'\d+(?:\.\d+)?', line[6]).group()
+                        ) * 1000000))
+
+        # 7: maxLoad
+        # All figures are in kg, if specified, so we have one of the following cases:
+        #   1. "-" -> None
+        #   2. "" -> None
+        #   3. "### kg" (where ### is an integer)-> ###
+        if "kg" in line[7]:
+            l.maxLoad = re.search(r'\d+(?:\.\d+)?', line[7]).group()
+        else:
+            l.maxLoad = None
+
+        # 8: launchType
+        # A launchType is one of two types of values:
+        #   1. "-" -> None
+        #   2. A launchType we copy directly.
+        if line[8] == "-":
+            l.launchType = None
+        else:
+            l.launchType = line[8]
+
+        # 9: funding
+        # This field is nearly the same as Constellation funding, with a few, small differences:
+        #   1. Instead of "million", this field uses "M".
+        #   2. There are no billion-dollar launchers.
+        #   3. We have no "?" but do have lots of "-".
+        # So we'll simply adapt the Constellation funding code minimally to these changed conditions.
+
+        # This field is one of a few types of values:
+        #   1. "Yes" -> isFunded = True, fundingAmt = None
+        #   2. "-" -> isFunded = None, fundingAmt = None
+        #   3. "$###M" ->  isFunded = True, fundingAmt = ### * 1,000,000
+        #   5. "Seed" -> same as 1
+        # We'll strip out "+" indicators that have no meaning in our DB. We'll also strip out "?" to clean up parsing,
+        # which means when checking for #2, we'll actually look for "" rather than "?".
+        line[9] = line[9].replace("?", "").replace("+", "")
+        if line[9] == "Yes" or line[9] == "Seed":
+            l.isFunded = True
+            l.fundingAmt = None
+        elif line[9] == "-":
+            l.isFunded = None
+            l.fundingAmt = None
+        elif "M" in line[9]:
+            l.isFunded = True
+
+            # 1. Find the number with a regular expression search. Might have a decimal point, even though it's a
+            #    very large number.
+            # 2. Convert to Decimal to preserve accuracy and allow us to do math.
+            # 3. Multiply as needed.
+            # 4. Convert to int to get rid of the decimal point.
+            # 9. Convert to string for SQL.
+            l.fundingAmt = \
+                str(
+                    int(
+                        Decimal(
+                            re.search(r'\d+(?:\.\d+)?', line[9]).group()
+                        ) * 1000000))
+
+        # 10: country
+        # Direct copy.
+        l.country = line[10]
+
+        # Print for testing, if desired.
+        # print(l)
+
+# For safety.
+l = None
 
 # Print our various lists, for testing purposes.
 # print("Organizations:", organizations)

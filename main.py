@@ -348,7 +348,56 @@ with TsvReader('spaceships.tsv') as reader:
 # print("Organizations:", organizations)
 # print("Form Factors:", formFactors)
 # print("Fields:", fields)
-print("Constellations:", constellations)
-print("Launchers:", launchers)
-print("Spaceships:", spaceships)
+# print("Constellations:", constellations)
+# print("Launchers:", launchers)
+# print("Spaceships:", spaceships)
 
+# And, finally, we'll output SQL files.
+# Constellations
+strings = [str(c) for c in constellations]
+with open("insertConstellations.sql", "w") as f:
+    f.write(Constellation.sqlInsertHeader())
+    f.write("\t")
+    f.write(",\n\t".join(strings))
+    f.write(";")
+
+# Launchers
+strings = [str(l) for l in launchers]
+with open("insertLaunchers.sql", "w") as f:
+    f.write(Launcher.sqlInsertHeader())
+    f.write("\t")
+    f.write(",\n\t".join(strings))
+    f.write(";")
+
+# Spaceships
+strings = [str(s) for s in spaceships]
+with open("insertSpaceships.sql", "w") as f:
+    f.write(Launcher.sqlInsertHeader())
+    f.write("\t")
+    f.write(",\n\t".join(strings))
+    f.write(";")
+
+# Now we're on to the simple tables for which we only have lists of strings.
+# Organizations
+strings = ["('{}')".format(o) for o in organizations]
+with open("insertOrganizations.sql", "w") as f:
+    f.write("INSERT INTO Organization(name) VALUES\n\t")
+    f.write(",\n\t".join(strings))
+    f.write(";")
+
+# Fields
+strings = ["('{}')".format(f) for f in fields]
+with open("insertFields.sql", "w") as f:
+    f.write("INSERT INTO Field(name) VALUES\n\t")
+    f.write(",\n\t".join(strings))
+    f.write(";")
+
+# FormFactors
+strings = ["('{}')".format(f) for f in formFactors]
+with open("insertFormFactors.sql", "w") as f:
+    f.write("INSERT INTO FormFactor(name) VALUES\n\t")
+    f.write(",\n\t".join(strings))
+    f.write(";")
+
+# And finally, we have two junction tables to output from Constellations.
+# TODO

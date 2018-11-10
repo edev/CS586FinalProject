@@ -21,3 +21,9 @@ class Spaceship:
 
     def __repr__(self):
         return self.__str__()
+
+    @classmethod
+    def sqlInsertHeader(cls):
+        """Returns the first line of an INSERT statement for Spaceship, i.e. INSERT ... VALUE\n"""
+
+        return "INSERT INTO Spaceship(orgName, name, description, launchYear) VALUES\n"

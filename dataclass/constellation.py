@@ -63,3 +63,9 @@ class Constellation:
             return None # We might need to change this later.
         formatString = "({}, {})".format(str(sqlint(self.index)), "{}")
         return ", ".join([formatString.format(sqlstr(formFactor)) for formFactor in self.formFactors])
+
+    @classmethod
+    def sqlInsertHeader(cls):
+        """Returns the first line of an INSERT statement for Constellation, i.e. INSERT ... VALUE\n"""
+
+        return "INSERT INTO Constellation(index, orgName, comment, planned, launched, firstLaunch, isFunded, fundingAmt) VALUES\n"

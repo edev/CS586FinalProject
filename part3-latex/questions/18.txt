@@ -1,0 +1,10 @@
+SELECT index, orgName, launched, planned, launched * 1.0 / planned AS percentFull
+FROM Constellation
+WHERE launched >= 0.8 * planned;
+
+ index |  orgname   | launched | planned |      percentfull       
+-------+------------+----------+---------+------------------------
+     1 | ExactEarth |       57 |      67 | 0.85074626865671641791
+     2 | Planet     |      324 |     150 |     2.1600000000000000
+    15 | Aireon     |       65 |      75 | 0.86666666666666666667
+(3 rows)

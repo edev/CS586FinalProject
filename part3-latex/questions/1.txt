@@ -1,0 +1,7 @@
+SELECT COUNT(DISTINCT Organization.name)
+FROM Constellation JOIN Organization ON Constellation.orgName = Organization.name;
+
+ count 
+-------
+    87
+(1 row)

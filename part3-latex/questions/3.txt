@@ -1,0 +1,10 @@
+SELECT AVG(ct)
+FROM
+    (SELECT COUNT(*) AS ct
+     FROM Constellation
+     GROUP BY orgName) AS Counts;
+
+          avg           
+------------------------
+ 1.00000000000000000000
+(1 row)

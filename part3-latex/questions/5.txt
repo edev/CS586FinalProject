@@ -1,0 +1,14 @@
+SELECT COUNT(*) 
+FROM
+    ((
+        SELECT orgName
+        FROM Constellation
+    ) UNION (
+        SELECT orgName
+        FROM Launcher
+    )) AS OrgList;
+
+ count 
+-------
+   173
+(1 row)

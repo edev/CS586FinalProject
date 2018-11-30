@@ -1,0 +1,38 @@
+SELECT year
+FROM
+    -- Union together all launch years, just like question 11
+    ((
+        SELECT firstLaunch AS year
+        FROM Constellation
+    ) UNION ALL (
+        SELECT firstLaunch AS year
+        FROM Launcher
+    ) UNION ALL (
+        SELECT launchYear AS year
+        FROM Spaceship
+    )) AS YearList
+GROUP BY year
+HAVING COUNT(*) = 
+    (SELECT MAX(ct)
+     FROM
+        -- Adapted from question 11, with the addition of a WHERE clause
+        (SELECT year, COUNT(*) AS ct
+         FROM
+             ((
+                 SELECT firstLaunch AS year
+                 FROM Constellation
+             ) UNION ALL (
+                 SELECT firstLaunch AS year
+                 FROM Launcher
+             ) UNION ALL (
+                 SELECT launchYear AS year
+                 FROM Spaceship
+             )) AS YearList
+         WHERE year IS NOT NULL
+         GROUP BY year
+         ORDER BY year ASC) AS Counts);
+
+ year 
+------
+ 2018
+(1 row)

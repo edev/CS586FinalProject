@@ -1,0 +1,123 @@
+SELECT * FROM ConstField;
+
+ constindex |       fieldname        
+------------+------------------------
+          1 | AIS
+          2 | Earth observation
+          3 | Weather
+          3 | AIS
+          3 | ADS-B
+          4 | Earth observation
+          5 | Earth observation
+          6 | Earth observation
+          7 | Emissions monitoring
+          8 | Earth observation
+          8 | Hyperspectral
+          9 | Earth observation
+         10 | Internet
+         10 | IoT / M2M
+         11 | IoT / M2M
+         12 | Weather
+         13 | Earth observation
+         13 | Hyperspectral
+         14 | Earth observation
+         15 | ADS-B
+         16 | IoT / M2M
+         17 | IoT / M2M
+         18 | IoT / M2M
+         18 | Internet
+         19 | SAR
+         20 | Internet
+         21 | Earth observation
+         21 | Hyperspectral
+         22 | IoT / M2M
+         22 | Orbital data relay
+         22 | Optical comms
+         23 | Weather
+         24 | IoT / M2M
+         25 | IoT / M2M
+         26 | IoT / M2M
+         27 | IoT / M2M
+         28 | IoT / M2M
+         28 | ADS-B
+         28 | AIS
+         28 | IR imaging
+         29 | RF spectrum monitoring
+         30 | Earth observation
+         31 | SAR
+         32 | Internet
+         33 | Earth observation
+         33 | AIS
+         34 | RF spectrum monitoring
+         35 | Internet
+         35 | IoT / M2M
+         36 | IoT / M2M
+         37 | Weather
+         38 | Earth observation
+         39 | Internet
+         40 | AIS
+         41 | Earth observation
+         41 | Hyperspectral
+         42 | Earth observation
+         43 | AIS
+         43 | ADS-B
+         44 | Earth observation
+         45 | Weather
+         46 | Earth observation
+         47 | Earth observation
+         48 | Earth observation
+         49 | Internet
+         50 | Orbital data relay
+         51 | Data storage
+         52 | Orbital data relay
+         52 | Optical comms
+         53 | Earth observation
+         54 | AIS
+         54 | Geolocation
+         55 | Earth observation
+         55 | Hyperspectral
+         56 | Internet
+         56 | Optical comms
+         57 | IoT / M2M
+         58 | SAR
+         59 | Weather
+         59 | IR imaging
+         60 | Internet
+         61 | SAR
+         62 | Earth observation
+         63 | Emissions monitoring
+         64 | Internet
+         65 | SAR
+         66 | Earth observation
+         67 | IoT / M2M
+         68 | Earth observation
+         68 | SAR
+         68 | AIS
+         68 | ADS-B
+         68 | IoT / M2M
+         69 | QKD
+         69 | Optical comms
+         70 | Earth observation
+         70 | Hyperspectral
+         71 | Optical comms
+         72 | Earth observation
+         72 | IR imaging
+         73 | Earth observation
+         74 | IoT / M2M
+         75 | IoT / M2M
+         76 | Earth observation
+         76 | Hyperspectral
+         77 | Internet
+         78 | Asteroid tracking
+         79 | Earth observation
+         80 | Internet
+         81 | SAR
+         82 | Earth observation
+         82 | IR imaging
+         83 | IoT / M2M
+         84 | AIS
+         85 | Emissions monitoring
+         86 | IoT / M2M
+         86 | Data storage
+         87 | IoT / M2M
+(118 rows)

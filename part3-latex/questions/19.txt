@@ -1,0 +1,25 @@
+SELECT  F.name AS field, COUNT(*) AS constellations, SUM(launched) AS launched, SUM(planned) AS planned
+FROM    Constellation C JOIN ConstField CF ON C.index = CF.constIndex
+        JOIN  Field F ON CF.fieldName = F.name
+GROUP BY F.name;
+
+         field          | constellations | launched | planned 
+------------------------+----------------+----------+---------
+ Optical comms          |              5 |        1 |      12
+ SAR                    |              7 |        1 |     134
+ QKD                    |              1 |        0 |        
+ Asteroid tracking      |              1 |        0 |        
+ Earth observation      |             29 |      362 |    1257
+ Geolocation            |              1 |        0 |      20
+ IR imaging             |              4 |        0 |     210
+ Weather                |              6 |       90 |     320
+ IoT / M2M              |             21 |       11 |    1254
+ Data storage           |              2 |        0 |      24
+ ADS-B                  |              5 |      150 |     337
+ Hyperspectral          |              7 |       11 |     117
+ AIS                    |              9 |      142 |     385
+ RF spectrum monitoring |              2 |        0 |      30
+ Internet               |             12 |        4 |    6403
+ Emissions monitoring   |              3 |        1 |      20
+ Orbital data relay     |              3 |        1 |       3
+(17 rows)

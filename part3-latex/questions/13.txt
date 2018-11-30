@@ -1,0 +1,12 @@
+SELECT status, COUNT(*)
+FROM Launcher
+GROUP BY status;
+
+     status     | count 
+----------------+-------
+ Concept        |     1
+ Cancelled      |     3
+ In development |    78
+ Retired        |     1
+ Operational    |     5
+(5 rows)

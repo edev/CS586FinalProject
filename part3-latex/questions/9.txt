@@ -1,0 +1,20 @@
+SELECT C.index, C.orgName, COUNT(*)
+FROM Constellation C JOIN ConstFF CFF ON C.index = CFF.constIndex
+GROUP BY C.index, C.orgName
+HAVING COUNT(*) = 
+    (SELECT MAX(ct)
+     FROM
+         (SELECT COUNT(*) AS ct
+          FROM ConstFF
+          GROUP BY constIndex) AS counts);
+
+-------+------------------------+-------
+    80 | Outernet               |     2
+    16 | Helios Wire            |     2
+    25 | Fleet Space            |     2
+    17 | Swarm Technologies     |     2
+    28 | AISTech                |     2
+     1 | ExactEarth             |     2
+     5 | Astro Digital (Aquila) |     2
+    18 | Kepler Communications  |     2
+(8 rows)

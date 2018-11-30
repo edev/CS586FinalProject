@@ -1,0 +1,13 @@
+SELECT SUM(fundingAmt)
+FROM
+    ((
+        SELECT fundingAmt
+        FROM Constellation
+     ) UNION ALL (
+        SELECT fundingAmt
+        FROM Launcher
+    )) AS Funding;
+
+    sum     
+------------
+ 4959430000

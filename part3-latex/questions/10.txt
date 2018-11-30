@@ -1,0 +1,82 @@
+SELECT C.index, C.orgName, COUNT(*)
+FROM Constellation C JOIN ConstFF CFF ON C.index = CFF.constIndex
+GROUP BY C.index, C.orgName
+HAVING COUNT(*) = 1;
+
+ index |             orgname             | count 
+-------+---------------------------------+-------
+     8 | Satellogic                      |     1
+    87 | 4skies (NovaNano)               |     1
+    74 | Galaktika                       |     1
+    54 | Kleos Space                     |     1
+    29 | HawkEye360                      |     1
+    71 | Laser Light                     |     1
+    68 | Tekever                         |     1
+     4 | Planet (Terra Bella / Skybox)   |     1
+    34 | UnSeenLabs                      |     1
+    70 | NorStar NorthStar               |     1
+    52 | Transcelestial                  |     1
+    83 | Terran Orbital (Tyvak)          |     1
+    67 | OQ Technology                   |     1
+    63 | Scepter                         |     1
+    10 | Xingyun                         |     1
+    35 | NSLComm (SkyFi)                 |     1
+    45 | Harris                          |     1
+     6 | BlackSky / Spaceflight          |     1
+    86 | BitSat (Dunvegan Space Systems) |     1
+    84 | ISIS / Innovative Data Services |     1
+    39 | Hongyan                         |     1
+    69 | ArQit                           |     1
+    36 | Kaskilo / eightyLEO             |     1
+    31 | Capella Space                   |     1
+    60 | Methera                         |     1
+    14 | Canon                           |     1
+    66 | EarthNow                        |     1
+    22 | Analytical Space                |     1
+    59 | Orora Tech                      |     1
+    13 | Zhuhai Orbita Control           |     1
+    65 | Umbra Lab                       |     1
+     2 | Planet                          |     1
+    62 | VEOWARE                         |     1
+    75 | Ubiquitilink                    |     1
+    73 | Alba Orbital                    |     1
+    44 | Rupercorp                       |     1
+    11 | Sky and Space Global            |     1
+    42 | SatRevolution                   |     1
+    82 | Earthcube                       |     1
+    41 | Reaktor Space                   |     1
+    46 | Earth-i                         |     1
+    40 | SRT Marine                      |     1
+    43 | Aerial & Maritime               |     1
+    53 | Dauria / SatByul                |     1
+    32 | OneWeb                          |     1
+     9 | Space View                      |     1
+     7 | GHGSat                          |     1
+    38 | Hera Systems                    |     1
+    15 | Aireon                          |     1
+    79 | Planetary Resources             |     1
+    26 | Astrocast (ELSE)                |     1
+    12 | GeoOptics                       |     1
+    85 | Promethean Labs                 |     1
+    72 | Koolock                         |     1
+    78 | B612 Foundation                 |     1
+    57 | Kineis                          |     1
+    24 | Hiber (Magnitude Space)         |     1
+    81 | Ursa Space Systems              |     1
+    61 | Trident Space (Magna Parva)     |     1
+    19 | ICEYE                           |     1
+    77 | Efir                            |     1
+    30 | Axelspace                       |     1
+    49 | Astrome                         |     1
+    47 | Synspective                     |     1
+     3 | Spire                           |     1
+    37 | Orbital Micro Systems           |     1
+    20 | SpaceX                          |     1
+    33 | Karten Space                    |     1
+    76 | Hypercubes                      |     1
+    64 | Astranis                        |     1
+    55 | HyperSat                        |     1
+    27 | Blink Astro                     |     1
+    23 | PlanetiQ                        |     1
+    56 | LaserFleet                      |     1
+(74 rows)

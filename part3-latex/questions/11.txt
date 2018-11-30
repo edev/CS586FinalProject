@@ -1,0 +1,33 @@
+SELECT year, COUNT(*)
+FROM
+    ((
+        SELECT firstLaunch AS year
+        FROM Constellation
+    ) UNION ALL (
+        SELECT firstLaunch AS year
+        FROM Launcher
+    ) UNION ALL (
+        SELECT launchYear AS year
+        FROM Spaceship
+    )) AS YearList
+GROUP BY year
+ORDER BY year ASC;
+
+ year | count 
+------+-------
+ 1990 |     1
+ 2008 |     2
+ 2013 |     3
+ 2014 |     1
+ 2016 |     4
+ 2017 |     8
+ 2018 |    37
+ 2019 |    25
+ 2020 |    15
+ 2021 |    11
+ 2022 |     2
+ 2023 |     4
+ 2024 |     1
+ 2025 |     1
+      |    67
+(15 rows)

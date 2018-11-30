@@ -1,0 +1,7 @@
+SELECT MIN(cost), MAX(cost), AVG(cost)
+FROM Launcher;
+
+  min  |   max    |         avg          
+-------+----------+----------------------
+ 40000 | 56000000 | 5366896.551724137931
+(1 row)

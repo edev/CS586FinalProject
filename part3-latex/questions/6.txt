@@ -1,0 +1,97 @@
+(
+    SELECT orgName
+    FROM Launcher
+) EXCEPT (
+    SELECT orgName
+    FROM Spaceship
+);
+
+           orgname           
+-----------------------------
+ Orbital ATK
+ Advanced Rockets Coporation
+ Rocketcrafters
+ Rocket Lab
+ Reaction Dynamics
+ bspace
+ Vector Space
+ Leaf Space
+ Chinarocket
+ Interorbital Systems
+ HyImpulse
+ MT Aerospace
+ Orbital Access
+ Nammo
+ Lin Industrial
+ Exos Aerospace
+ CONAE
+ Aevum
+ SpinLaunch
+ Smallspark Space Systems
+ Link Space
+ Swedish Space Corporation
+ Masterra Space
+ Orbex Space
+ New Rocket Technologies
+ One Space
+ i-Space
+ VALT Enterprises
+ Agnikul
+ Fore Dynamics
+ Tranquility Aerospace
+ Roketsan
+ Stofiel Aerospace
+ CTA
+ Rocketplane Global
+ Pangea Aerospace
+ Pythom
+ LandSpace
+ Spacedarts
+ Odyne Space
+ Avio
+ Interstellar Technologies
+ Virgin Galactic
+ Astra Space
+ MISHAAL Aerospace
+ LEO Aerospace
+ CASIC / Exspace
+ UP Aerospace
+ Wagner Industries
+ Independence-X
+ Thor Launch Systems
+ Space One (Canon, IHI)
+ Open Space
+ Horizon Space Tech
+ Skyrora
+ SpaceOps
+ JAXA
+ Bellatrix Aerospace
+ Heliaq
+ LAUNCHER Space
+ Relativity Space
+ ISRO
+ i-Space (Space Honor)
+ PLD Space
+ RocketStar
+ Ripple Aerospace
+ bluShift Aerospace
+ Open Space Orbital
+ Cubecab
+ Zero 2 Infinity
+ Celestia Aerospace
+ Gilmour Space
+ Equatorial Space Industries
+ Scorpius Space Launch
+ Aphelion Orbitals
+ abl space systems
+ Dawn Aerospace
+ Frontier Astronautics
+ CloudIX (Nine)
+ Firefly
+ SpaceLS
+ ARCA Space
+ Swiss Space Systems
+ Rose Galactic
+ Generation Orbit
+ Bagaveev Corporation
+(86 rows)

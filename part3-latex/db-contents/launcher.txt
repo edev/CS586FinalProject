@@ -1,0 +1,93 @@
+SELECT * FROM Launcher;
+
+           orgname           |              name               | isfunded | fundingamt | launchtype |     status     | firstlaunch |    country     | founded | launches |   cost   | maxload 
+-----------------------------+---------------------------------+----------+------------+------------+----------------+-------------+----------------+---------+----------+----------+---------
+ Orbital ATK                 | Pegasus                         |          |            | Plane      | Operational    |        1990 | US             |    1982 |       43 | 56000000 |     443
+ SpaceX                      | Falcon 1e                       |          |            | Land       | Retired        |        2008 | US             |    2013 |        5 | 11000000 |    1000
+ CASIC / Exspace             | Fei Tian 1 / Kuaizhou-1A        | true     |            | Land       | Operational    |        2017 | China          |    1999 |        2 |          |     300
+ Rocket Lab                  | Electron                        | true     |            | Land       | Operational    |        2018 | US/New Zealand |    2006 |        2 |  4900000 |     150
+ JAXA                        | SS-520-4                        | true     |            | Land       | Operational    |        2018 | Japan          |    1969 |        1 |          |       4
+ LandSpace                   | Zhuque-1 (ZQ-1)                 |          |            | Land       | Operational    |        2018 | China          |    2015 |        1 |          |     300
+ Virgin Galactic             | LauncherOne                     | true     |            | Plane      | In development |        2018 | US             |    2004 |        0 | 10000000 |     200
+ Vector Space                | Vector-R                        | true     |  103000000 | Land       | In development |        2018 | US             |    2016 |        0 |  1500000 |      50
+ Zero 2 Infinity             | Bloostar                        | true     |            | Balloon    | In development |        2018 | Spain          |    2009 |        0 |  4000000 |      75
+ bspace                      | Volant                          |          |            | Balloon    | In development |        2018 | US             |    2016 |        0 |          |     215
+ CloudIX (Nine)              |                                 |          |            | Balloon    | In development |        2018 | US             |    2016 |        0 |          |      22
+ Astra Space                 | Astra                           |          |            | Land       | In development |        2018 | US             |    2016 |        0 |          |     100
+ CTA                         | VLM                             |          |            | Land       | In development |        2018 | Brazil         |    1953 |        0 |          |     150
+ One Space                   | OS-M1                           | true     |  116000000 | Land       | In development |        2018 | China          |    2015 |        0 |   100000 |     112
+ Vector Space                | Vector-H                        | true     |  103000000 | Land       | In development |        2019 | US             |    2016 |        0 |  3000000 |     105
+ i-Space                     | Hyperbola-1 (Shian Quxian)      |          |            | Land       | In development |        2019 | China          |    2017 |        0 |          |        
+ Aevum                       | Ravn                            | true     |            | Plane      | In development |        2019 | US             |    2016 |        0 |          |        
+ Rocketcrafters              | Intrepid-1                      |          |            | Land       | In development |        2019 | US             |    2010 |        0 |  5400000 |     376
+ CONAE                       | Tronador II                     |          |            | Land       | In development |        2019 | Argentina      |    1991 |        0 |          |     250
+ Firefly                     | Alpha (a)                       | true     |   21800000 | Land       | In development |        2019 | US             |    2014 |        0 |  9000000 |    1000
+ ISRO                        | PSLV Light?                     |          |            | Land       | In development |        2019 | India          |    1969 |        0 |          |     700
+ RocketStar                  | StarLord                        |          |            | Sea        | In development |        2019 | US             |    2015 |        0 |          |     300
+ SpaceOps                    | Rocky 1                         |          |            | Land       | In development |        2019 | Australia      |    2016 |        0 |   100000 |       5
+ Equatorial Space Industries | Volans                          |          |            | Land       | In development |        2019 | Singapore      |    2017 |        0 |  1000000 |      50
+ Link Space                  | New Line 1                      |          |            | Land       | In development |        2020 | China          |    2014 |        0 |  4500000 |     200
+ Cubecab                     | Cab-3A                          |          |            | Plane      | In development |        2020 | US             |    2014 |        0 |   250000 |       5
+ Nammo                       | North Star                      |          |            | Land       | In development |        2020 | Norway         |    1998 |        0 |          |      20
+ Gilmour Space               | Eris                            | true     |   17000000 | Land       | In development |        2020 | Singapore      |    2012 |        0 |          |     380
+ Open Space                  | Neutrino 1                      |          |            | Land       | In development |        2020 | Canada         |    2014 |        0 |          |        
+ abl space systems           | RS1                             |          |            | Land       | In development |        2020 | US             |    2017 |        0 |          |     650
+ Relativity Space            | Terran 1                        | true     |   45100000 | Land       | In development |        2020 | US             |    2016 |        0 | 10000000 |    1250
+ Reaction Dynamics           |                                 | true     |     200000 | Land       | In development |        2020 | Canada         |    2017 |        0 |          |     150
+ bluShift Aerospace          | Red Dwarf                       |          |            |            | In development |        2020 | US             |    2015 |        0 |          |        
+ Thor Launch Systems         |                                 |          |            |            | In development |        2020 | US             |         |        0 |          |        
+ UP Aerospace                | Spyder                          |          |            | Land       | In development |        2021 | US             |    1998 |        0 |  1000000 |      10
+ PLD Space                   | Arion 2                         | true     |    1300000 | Land       | In development |        2021 | Spain          |    2011 |        0 |          |     150
+ Interstellar Technologies   | Zero                            |          |            | Land       | In development |        2021 | Japan          |    2003 |        0 |          |     100
+ Aphelion Orbitals           | Helios / Feynman                | true     |     500000 | Land       | In development |        2021 | US             |    2015 |        0 |   550000 |      14
+ Avio                        | Vega Light                      |          |            | Land       | In development |        2021 | Italy          |    1908 |        0 |          |     250
+ Masterra Space              | Equinox                         |          |            | Land       | In development |        2021 | UK             |    1984 |        0 |  1000000 |      20
+ Space One (Canon, IHI)      |                                 |          |            | Land       | In development |        2021 | Japan          |    2017 |        0 |          |     100
+ SpinLaunch                  |                                 | true     |   50000000 | Catapult   | In development |        2022 | US             |    2014 |        0 |          |        
+ Orbital Access              | Orbital 500                     |          |            | Plane      | In development |        2023 | UK             |    2015 |        0 |          |     500
+ Smallspark Space Systems    | Frost 1                         |          |            |            | In development |        2023 | UK             |    2018 |        0 |          |     100
+ Independence-X              | DNLV                            |          |            | Land       | In development |        2023 | Malaysia       |    1972 |        0 |  4500000 |     200
+ Roketsan                    | UFS                             |          |            |            | In development |        2023 | Turkey         |         |        0 |          |        
+ Bagaveev Corporation        | Bagaveev                        | true     |     670000 | Land       | In development |             | US             |    2013 |        0 |          |      10
+ Horizon Space Tech          | Black Arrow 2                   |          |            | Land       | In development |             | UK             |    2014 |        0 |  6300000 |     200
+ Scorpius Space Launch       | Demi-Sprite                     |          |            | Land       | In development |             | US             |    1984 |        0 |  3600000 |     160
+ Tranquility Aerospace       | Devon Two                       |          |            | Land       | In development |             | UK             |    2015 |        0 |          |       4
+ MISHAAL Aerospace           | M-OV                            |          |            | Land       | In development |             | US             |    2010 |        0 |          |     454
+ SpaceLS                     | Prometheus-1                    |          |            | Land       | In development |             | UK             |    2010 |        0 |          |     250
+ Celestia Aerospace          | Space Arrow CM                  |          |            | Plane      | In development |             | Spain          |    2014 |        0 |   200000 |      16
+ VALT Enterprises            | VALT                            |          |            | Land       | In development |             | US             |    2015 |        0 |  1700000 |        
+ Lin Industrial              | Taymyr-1A                       |          |            | Land       | In development |             | Russia         |    2014 |        0 |   500000 |      12
+ Orbex Space                 |                                 | true     |   39800000 | Land       | In development |             | UK             |    2015 |        0 |          |        
+ Fore Dynamics               | NFR-1                           |          |            | Land       | In development |             | US             |    2017 |        0 |          |     200
+ Skyrora                     | Skyrora XL                      |          |            | Land       | In development |             | UK/Ukraine     |    2017 |        0 |          |        
+ LAUNCHER Space              |                                 |          |            | Land       | In development |             | US             |    2016 |        0 |          |        
+ Rocketplane Global          | Rocketplane XS                  |          |            | Plane      | In development |             | US             |    2017 |        0 |          |    1500
+ Odyne Space                 |                                 |          |            | Land       | In development |             | US             |    2016 |        0 |          |        
+ Ripple Aerospace            | Sea Serpent One                 |          |            | Sea        | In development |             | Norway         |    2014 |        0 |          |    2600
+ Swedish Space Corporation   | Rainbow                         |          |            | Land       | In development |             | Sweden         |    1972 |        0 |          |     100
+ Generation Orbit            | GoLauncher 2                    |          |            | Land       | In development |             | Italy          |    2011 |        0 |  3000000 |      40
+ Exos Aerospace              | Jaguar                          |          |            | Land       | In development |             | US             |    2014 |        0 |          |     100
+ Chinarocket                 | Lightning Dragon-1 (Jie Long-1) |          |            | Land       | In development |             | China          |    2018 |        0 |          |     150
+ Heliaq                      | ALV-2                           |          |            | Land       | In development |             | Australia      |    2015 |        0 |          |      30
+ LEO Aerospace               |                                 |          |            | Balloon    | In development |             | US             |    2017 |        0 |          |        
+ Bellatrix Aerospace         | Chetak                          |          |            | Land       | In development |             | India          |    2015 |        0 |  2000000 |     150
+ Stofiel Aerospace           | BOREAS                          |          |            | Balloon    | In development |             | US             |    2015 |        0 |          |     100
+ New Rocket Technologies     |                                 |          |            | Land       | In development |             | Russia         |    2017 |        0 |          |     500
+ Dawn Aerospace              | MK-3                            |          |            | Plane      | In development |             | Netherlands    |    2016 |        0 |          |        
+ i-Space (Space Honor)       |                                 | true     |   90600000 | Land       | In development |             | China          |    2016 |        0 |          |        
+ Agnikul                     | AgniBaan                        |          |            | Land       | In development |             | India          |    2017 |        0 |          |     100
+ MT Aerospace                | MTA, WARR, Daneo                |          |            | Plane      | In development |             | Germany        |    2005 |        0 |          |        
+ Pythom                      | Pythom                          |          |            | Land       | In development |             | Sweden         |    2017 |        0 |          |      70
+ Rose Galactic               | Anthium Orbital Cannon          |          |            | Cannon     | In development |             | US             |    2017 |        0 |          |        
+ Advanced Rockets Coporation | DELV                            |          |            | Land       | In development |             | US             |    2017 |        0 |          |        
+ HyImpulse                   |                                 |          |            |            | In development |             | Germany        |    2018 |        0 |          |     400
+ Pangea Aerospace            | Meso                            |          |            | Land       | In development |             | Spain          |    2018 |        0 |          |     150
+ Spacedarts                  |                                 |          |            | Land       | In development |             | Russia         |    2017 |        0 |    40000 |      10
+ Frontier Astronautics       |                                 |          |            |            | In development |             | US             |    2008 |        0 |          |        
+ Wagner Industries           | Konshu                          |          |            |            | In development |             | US             |    2015 |        0 |          |        
+ Interorbital Systems        | NEPTUNE N5                      |          |            | Land       | In development |             | US             |    1996 |        0 |   500000 |      40
+ Leaf Space                  | Primo                           |          |            | Land       | Concept        |             | Italy          |    2014 |        0 |          |        
+ ARCA Space                  | Haas 2C                         |          |            | Land       | Cancelled      |             | US/Romania     |    1999 |        0 |          |     400
+ Open Space Orbital          | Neutrino I                      |          |            | Land       | Cancelled      |             | Canada         |    2014 |        0 |          |      50
+ Swiss Space Systems         | SOAR                            |          |            | Plane      | Cancelled      |             | Switzerland    |    2013 |        0 | 10000000 |     250
+(88 rows)

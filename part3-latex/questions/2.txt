@@ -1,0 +1,187 @@
+SELECT O1.name, 
+    (SELECT COUNT(*)
+     FROM   Organization O2 JOIN Constellation C2 ON O2.name = C2.orgName
+     WHERE  O2.name = O1.name)
+FROM Organization O1;
+
+              name               | count 
+---------------------------------+-------
+ ExactEarth                      |     1
+ Planet                          |     1
+ Spire                           |     1
+ Planet (Terra Bella / Skybox)   |     1
+ Astro Digital (Aquila)          |     1
+ BlackSky / Spaceflight          |     1
+ GHGSat                          |     1
+ Satellogic                      |     1
+ Space View                      |     1
+ Xingyun                         |     1
+ Sky and Space Global            |     1
+ GeoOptics                       |     1
+ Zhuhai Orbita Control           |     1
+ Canon                           |     1
+ Aireon                          |     1
+ Helios Wire                     |     1
+ Swarm Technologies              |     1
+ Kepler Communications           |     1
+ ICEYE                           |     1
+ SpaceX                          |     1
+ Orbital Sidekick                |     1
+ Analytical Space                |     1
+ PlanetiQ                        |     1
+ Hiber (Magnitude Space)         |     1
+ Fleet Space                     |     1
+ Astrocast (ELSE)                |     1
+ Blink Astro                     |     1
+ AISTech                         |     1
+ HawkEye360                      |     1
+ Axelspace                       |     1
+ Capella Space                   |     1
+ OneWeb                          |     1
+ Karten Space                    |     1
+ UnSeenLabs                      |     1
+ NSLComm (SkyFi)                 |     1
+ Kaskilo / eightyLEO             |     1
+ Orbital Micro Systems           |     1
+ Hera Systems                    |     1
+ Hongyan                         |     1
+ SRT Marine                      |     1
+ Reaktor Space                   |     1
+ SatRevolution                   |     1
+ Aerial & Maritime               |     1
+ Rupercorp                       |     1
+ Harris                          |     1
+ Earth-i                         |     1
+ Synspective                     |     1
+ Space Systems Engineering       |     1
+ Astrome                         |     1
+ Audacy Space                    |     1
+ Cloud Constellation             |     1
+ Transcelestial                  |     1
+ Dauria / SatByul                |     1
+ Kleos Space                     |     1
+ HyperSat                        |     1
+ LaserFleet                      |     1
+ Kineis                          |     1
+ XpressSAR                       |     1
+ Orora Tech                      |     1
+ Methera                         |     1
+ Trident Space (Magna Parva)     |     1
+ VEOWARE                         |     1
+ Scepter                         |     1
+ Astranis                        |     1
+ Umbra Lab                       |     1
+ EarthNow                        |     1
+ OQ Technology                   |     1
+ Tekever                         |     1
+ ArQit                           |     1
+ NorStar NorthStar               |     1
+ Laser Light                     |     1
+ Koolock                         |     1
+ Alba Orbital                    |     1
+ Galaktika                       |     1
+ Ubiquitilink                    |     1
+ Hypercubes                      |     1
+ Efir                            |     1
+ B612 Foundation                 |     1
+ Planetary Resources             |     1
+ Outernet                        |     1
+ Ursa Space Systems              |     1
+ Earthcube                       |     1
+ Terran Orbital (Tyvak)          |     1
+ ISIS / Innovative Data Services |     1
+ Promethean Labs                 |     1
+ BitSat (Dunvegan Space Systems) |     1
+ 4skies (NovaNano)               |     1
+ Orbital ATK                     |     0
+ CASIC / Exspace                 |     0
+ Rocket Lab                      |     0
+ JAXA                            |     0
+ LandSpace                       |     0
+ Virgin Galactic                 |     0
+ Vector Space                    |     0
+ Zero 2 Infinity                 |     0
+ bspace                          |     0
+ CloudIX (Nine)                  |     0
+ Astra Space                     |     0
+ CTA                             |     0
+ One Space                       |     0
+ i-Space                         |     0
+ Aevum                           |     0
+ Rocketcrafters                  |     0
+ CONAE                           |     0
+ Firefly                         |     0
+ ISRO                            |     0
+ RocketStar                      |     0
+ SpaceOps                        |     0
+ Equatorial Space Industries     |     0
+ Link Space                      |     0
+ Cubecab                         |     0
+ Nammo                           |     0
+ Gilmour Space                   |     0
+ Open Space                      |     0
+ abl space systems               |     0
+ Relativity Space                |     0
+ Reaction Dynamics               |     0
+ bluShift Aerospace              |     0
+ Thor Launch Systems             |     0
+ UP Aerospace                    |     0
+ PLD Space                       |     0
+ Interstellar Technologies       |     0
+ Aphelion Orbitals               |     0
+ Avio                            |     0
+ Masterra Space                  |     0
+ Space One (Canon, IHI)          |     0
+ SpinLaunch                      |     0
+ Orbital Access                  |     0
+ Smallspark Space Systems        |     0
+ Independence-X                  |     0
+ Roketsan                        |     0
+ Bagaveev Corporation            |     0
+ Horizon Space Tech              |     0
+ Scorpius Space Launch           |     0
+ Tranquility Aerospace           |     0
+ MISHAAL Aerospace               |     0
+ SpaceLS                         |     0
+ Celestia Aerospace              |     0
+ VALT Enterprises                |     0
+ Lin Industrial                  |     0
+ Orbex Space                     |     0
+ Fore Dynamics                   |     0
+ Skyrora                         |     0
+ LAUNCHER Space                  |     0
+ Rocketplane Global              |     0
+ Odyne Space                     |     0
+ Ripple Aerospace                |     0
+ Swedish Space Corporation       |     0
+ Generation Orbit                |     0
+ Exos Aerospace                  |     0
+ Chinarocket                     |     0
+ Heliaq                          |     0
+ LEO Aerospace                   |     0
+ Bellatrix Aerospace             |     0
+ Stofiel Aerospace               |     0
+ New Rocket Technologies         |     0
+ Dawn Aerospace                  |     0
+ i-Space (Space Honor)           |     0
+ Agnikul                         |     0
+ MT Aerospace                    |     0
+ Pythom                          |     0
+ Rose Galactic                   |     0
+ Advanced Rockets Coporation     |     0
+ HyImpulse                       |     0
+ Pangea Aerospace                |     0
+ Spacedarts                      |     0
+ Frontier Astronautics           |     0
+ Wagner Industries               |     0
+ Interorbital Systems            |     0
+ Leaf Space                      |     0
+ ARCA Space                      |     0
+ Open Space Orbital              |     0
+ Swiss Space Systems             |     0
+ Boeing                          |     0
+ Sierra Nevada Corp              |     0
+ Lockheed Martin                 |     0
+ ULA (United Launch Alliance)    |     0
+ Reaction Engines                |     0
+(178 rows)

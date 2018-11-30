@@ -1,0 +1,12 @@
+SELECT index, orgName, launched, planned, (planned - launched) AS unlaunched
+FROM Constellation
+WHERE planned - launched = 
+    (SELECT MAX(unlaunched)
+     FROM
+        (SELECT (planned - launched) AS unlaunched
+         FROM Constellation) AS UnlaunchedCounts);
+
+ index | orgname | launched | planned | unlaunched 
+-------+---------+----------+---------+------------
+    20 | SpaceX  |        2 |    4425 |       4423
+(1 row)

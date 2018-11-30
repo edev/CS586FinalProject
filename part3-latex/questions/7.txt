@@ -1,0 +1,15 @@
+(
+    SELECT orgName
+    FROM Constellation
+) INTERSECT (
+    SELECT orgName
+    FROM Launcher
+) INTERSECT (
+    SELECT orgName
+    FROM Spaceship
+);
+
+ orgname 
+---------
+ SpaceX
+(1 row)

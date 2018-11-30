@@ -1,0 +1,14 @@
+SELECT launchType
+FROM Launcher
+GROUP BY launchType
+HAVING COUNT(*) =
+    (SELECT MAX(ct)
+     FROM
+        (SELECT launchType, COUNT(*) AS ct
+         FROM Launcher
+         GROUP BY launchType) AS LTCounts);
+
+ launchtype 
+------------
+ Land
+(1 row)

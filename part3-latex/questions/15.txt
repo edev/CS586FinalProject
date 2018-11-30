@@ -1,0 +1,12 @@
+SELECT launchType
+FROM Launcher
+WHERE status='In development'
+GROUP BY launchType
+HAVING COUNT(*) =
+    (SELECT MAX(ct)
+     FROM
+        (SELECT launchType, COUNT(*) AS ct
+         FROM Launcher
+         WHERE status='In development'
+         GROUP BY launchType) AS LTCounts);
+

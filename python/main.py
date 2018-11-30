@@ -54,9 +54,9 @@ with TsvReader('constellations.tsv') as reader:
             # Note: if we don't have 2 tokens, then we don't know what to do! Leave them at default.
             # But here we're able to parse 2 tokens. Either might be a number or '?' and WILL have spaces around it.
             if tokens[0] != '?':
-                c.planned = tokens[0]
+                c.launched = tokens[0]
             if tokens[1] != '?':
-                c.launched = tokens[1]
+                c.planned = tokens[1]
 
         # 2: first launch (year).
         # Now, this can be a numeric year, '?', or 'Cancelled'. The latter 2 translate to None.
